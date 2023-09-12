@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSwaper</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/Branch/Bio/Semester1/sem1.css">
+    <link rel="shortcut icon" href="/Home/asset/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Home/style.css" class="src">
+</head>
+
+<body>
+    <!-- Header section -->
+  <header class="head">
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="title-bar">
+      <img src="/Home/asset/logo.png" alt="" class="logo" />
+      <h2 class="title-name">Book Swaper</h2>
+    </div>
+
+    <div class="nav nav1">
+      <a class="hamburger" href="index.html">Home</a>
+      <a class="hamburger" href="/Branch/branch.html">Branch</a>
+      <a class="hamburger" href="/AboutUs/about.html">About Us</a>
+      <a class="hamburger" href="/ContactUs/contact.html">Contact Us</a>
+    </div>
+  </header>
+
+    <div class="sem-img">
+        <div class="main1">
+            <img src="/Home/asset/home-image.png" width="600px" height="600px" />
+        </div>
+        <div class="main2">
+            <h2 class="ce-name">Information Technology</h2>
+            <h2 clas="ce-sem1">Sem 3</h2>
+        </div>
+    </div>
+
+
+    <p class="branch-title">Books</p>
+
+    <div class="branch-name">
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/DBMS.png" alt="">
+            </div>
+            <span class="b-name ">Database Management</span>
+            <span class="b-name ">System</span>
+            <br>
+        </div>
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/DF.jpg" alt="">
+            </div>
+            <span class="b-name ">Digital</span>
+            <span class="b-name ">Fundamentals</span>
+            <br>
+
+        </div>
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/PS.jpeg" alt="">
+            </div>
+            <span class="b-name">Probability &</span>
+            <span class="b-name">Statistics</span>
+            <br>
+        </div>
+    </div>
+    <div class="branch-name">
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/DS.png" alt="">
+            </div>
+            <span class="b-name ">Data Structure</span>
+            <span class="b-name ">Engineering</span>
+            <br>
+        </div>
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/ETC.png" alt="">
+            </div>
+            <span class="b-name ">Efective Technical</span>
+            <span class="b-name ">Communication</span>
+            <br>
+        </div>
+
+        <div class="branch-logo">
+            <div class="book-img">
+                <img src="/Branch/CS/Semester3/Asset/IC.jpeg" alt="">
+            </div>
+            <span class="b-name">Indian</span>
+            <span class="b-name">Constitution</span>
+            <br>
+        </div>
+
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+
+        <div class="footer">
+            <div class="footerImage">
+                <img src="/Home/asset/footer-image.png" alt="" style="height: 300px;">
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><a href="/Home/index.html">Home</a></li>
+                    <li><a href="/Branch/branch.html">Branch</a></li>
+                    <li><a href="/AboutUs/about.html">About Us</a> </li>
+                    <li><a href="/ContactUs/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="foot">
+                <ul>
+                    <li><i class="fa-brands fa-whatsapp fa-xl"
+                            style="color: #25cc19;"></i>&nbsp;&nbsp;&nbsp;&nbsp;Whatsapp</li>
+                    <li><i class="fa-brands fa-instagram fa-xl" style="color: #b71fb2;"></i>&nbsp;&nbsp;&nbsp; Instagram
+                    </li>
+                    <li><i class="fa-solid fa-envelope fa-lg" style="color: #165cd4;"></i>&nbsp;&nbsp;&nbsp;
+                        bookswaper@gmail.com
+                    </li>
+                    <li><i class="fa-solid fa-location-dot fa-xl"
+                            style="color: #c70f0f;"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LD
+                        Collage of Engineering</li>
+
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sub-footer">
+        <span class="sf">
+            <p>&copy; 2023 BookSwaper | All Rights Reserved </p>
+        </span>
+
+    </div>
+
+    <script>
+        burger=document.querySelector('.burger')
+      navbar=document.querySelector('.nav')
+      header=document.querySelector('.head')
+      
+      
+      burger.addEventListener('click',()=>{
+        navbar.classList.toggle('nav1');
+        header.classList.toggle('h-respo');
+      })
+      
+      
+      </script>
+</body>
+
+</html>
