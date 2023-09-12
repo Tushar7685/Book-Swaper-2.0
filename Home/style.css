@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Lilita+One&family=Oswald:wght@500&family=Raleway:ital@1&family=Roboto+Mono&family=Rubik:wght@500&family=Tilt+Prism&display=swap');
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: none;
+    border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    transition: width none; */
+}
+body{
+  overflow-x: hidden;
+}  
+  /* header section */
+
+     /* Hamburger */
+
+.burger{
+  width: 35px;
+  height: 35px;
+  border: 2px solid black;
+  position: fixed;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; 
+  border-radius: 15%;
+  padding: 5px;
+  visibility: hidden;
+  /* align-items: center;  */
+}
+
+.line{
+  height:3px;
+  width:80%;
+  margin: auto;
+  background-color: black;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid black;
+    position: sticky;
+    top: 0rem;
+    background-color: white;
+    z-index: 1;
+    transition: all 0.5s ease-in;
+}
+.logo{
+  width: 5.5rem;
+  height: 4.5rem;
+  margin: 0px 20px;
+  padding-bottom: 5px;
+
+}
+
+.title-name{
+  font-family: 'Lilita One', cursive;
+      /* font-weight:bold; */
+    font-size: 2.5rem;
+}
+.nav{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 1s ease-in;
+}
+.nav a{
+    text-decoration: none;
+    font-family: 'IBM Plex Serif', serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: all 0.8s ease-in 0.1s;
+}
+
+.title-bar{
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.nav a:hover{
+    border-radius: 20px;
+    padding: 7px;
+    font-weight: 500;
+    background-color: rgb(126,34,226);
+    color:white;
+}
+
+  /* main section */
+
+.main{
+  display: flex;
+justify-content: space-between;
+background-image: url("asset/light_background-wallpaper.jpg");
+/* height: 650px; */
+padding: 3rem 0;
+background-size: cover;
+}
+
+.main1
+{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* height: 5rem; */
+
+
+}
+.main1 img{
+  width: 120%;
+}
+.main2{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  
+}
+
+#typewriter {
+  font-family: 'Tilt Prism', cursive;
+  font-size: 2.5rem;
+  font-weight: bolder;
+  white-space: nowrap; /* Keep the text in one line */
+  overflow: hidden; /* Hide overflowing text */
+  /*border-right: 0.15em solid #000; /* Add cursor effect*/
+  animation: typewriter 0s steps(40, end); /* Animation duration and steps */
+}
+
+@keyframes typewriter {
+  from {
+    width: 0; /* Start with no width */
+  }
+  to {
+    width: auto; /* Transition to full width */
+  }}
+
+  .buy{
+    border-radius: 10px;
+    padding: 15px;
+    /* font-weight: 500; */
+    background-color: rgb(126,34,226);
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .buy:hover{
+    background-color: rgb(254, 181, 70);
+    color: black;
+    border-top: 3px solid black;
+    padding-bottom: 0.2rem;
+  }
+  .sell{
+    border-radius: 10px;
+    padding: 15px;
+    /* font-weight: 500; */
+    background-color: rgb(126,34,226);
+    color:white;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 20px;
+    /* margin-right: 16rem; */
+  }
+  .sell:hover{
+    background-color: rgb(254, 181, 70);
+    color: black;
+    border-top: 3px solid black;
+    padding-bottom: 0.2rem
+  }
+  
+  .headstate3{
+
+    font-family: 'Bagel Fat One', cursive;
+    font-size: 2rem;
+    color: #e03168;
+  }
+  .headstate1{
+  font-family: 'Bagel Fat One', cursive;
+  font-size: 2rem;
+  color: #e03168;
+} 
+.headstate2{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: black;
+  font-family: 'Bagel Fat One', cursive;
+  
+}
+.buttons{
+  display:flex;
+  justify-content: center;
+  /* margin-left: 7.5rem; */
+}
+
+.info{
+  /* margin-right:2rem; */
+}
+
+/* Branch section */
+
+.branch-title{
+  /* margin-top: 5rem; */
+  margin: 2rem 0;
+  display: flex;
+  font-size: 2.5rem;
+  font-family: 'Rubik', sans-serif;
+    justify-content: center;
+}
+.branch-name{
+display: flex;
+justify-content: space-around;
+/* height: 300px; */
+margin: 30px 40px;
+flex-wrap: wrap;
+
+
+}
+.branch-logo img{
+width: 210px;
+height: 190px;
+
+}
+.branch-logo{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+
+}
+.b-name{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+font-weight: 600;
+  font-size: 1.4rem;
+  transition: transform 0.3s, box-shadow 0.3s; /* Add smooth transitions for transform and box-shadow */
+  border: none; /* Remove the border */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a box shadow */
+
+}
+#semesterSelect{ 
+  visibility: hidden;
+}
+
+.branch-logo:hover{
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);  border: 2px solid black;
+  border-radius: 7px;
+  #semesterSelect{ 
+    background-color: rgba(147, 140, 140, 0.639) ;
+    color: black;
+    visibility: visible;
+    border-radius: 5%;
+    width: 80%;
+    margin-left: 10%;
+    padding: 4px 20px;
+    margin-bottom: 2%;
+  }
+}
+.bookLogo:hover{
+  transform: scale(0.9);
+}
+.b-name {
+  /* Specify different styles for the nested boxes */
+  box-shadow: none;
+  border: 0px solid none;
+  
+}
+
+.b-name:hover {
+  transform: none; /* Apply zoom-in effect on hover for nested boxes */
+}
+
+.seeAll{
+  /* display: flex; */
+  text-align: center;
+  align-items: center;
+  display:block;
+  margin-top: 3rem;
+}
+.seebtn:hover{
+  padding: 15px;
+  background-color: rgb(254, 181, 70);
+  color: black;
+  border-top: 3px solid black;
+}
+
+/* popular book section */
+
+.popularBook{
+  display: flex;
+  justify-content: center;
+}
+
+.bookLogo{
+  /* padding: 2rem; */
+}
+
+.bookSection{
+  background-color:beige;
+  padding: 0.5rem 0;
+  margin: 3rem 0;
+}
+
+
+/* footer section */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 3rem;
+  background-color: rgb(212, 105, 185);
+}
+
+.footer ul{
+  list-style:none;
+  margin: 2rem;
+
+}
+
+.footer ul a{
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footerImage{
+  display: inline-block ;
+  padding: 0;
+}
+
+.foot ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 17vh;
+}
+
+.foot ul a:hover{
+  text-decoration: underline;
+  color: blue;
+
+}
+.sub-footer{
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-weight: 600;
+  font-size: large;
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 1350px) {
+  #typewriter {
+      font-size: 2rem;
+      text-align: center;
+  }
+
+  .headstate1,
+  .headstate3 {
+      font-size: 1.7rem;
+  }
+}
+
+@media only screen and (max-width:1100px) {
+  .main {
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  .main2{
+      width: max-content;
+  }
+  .main1 img{
+      width: 200%;
+  }
+}
+@media only screen and (max-width:930px){
+  .branch-name{
+      flex-wrap: wrap;
+  }
+  .branch-section{
+      display: flex;
+      flex-direction: column;
+  }
+  .bookSection{
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+  }
+  .footerImage{
+      display: none;
+  }
+  .headstate1,
+  .headstate3 {
+      font-size: 1.3rem;
+      text-align: center;
+  }
+  .nav a{
+      font-weight: 600;
+      font-size: 15px;
+  }
+  .title-name{
+      font-size: 2.1rem;
+  }
+  
+}
+
+@media only screen and (max-width:700px){
+  header{
+      height:72px;
+      flex-direction: column;
+      align-items: flex-start;
+  }
+  .h-respo{
+      height:500px;
+  }
+  .nav{
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+      /* height: 12px; */
+  }
+  .nav1{
+      /* height: 10px; */
+      opacity:0;
+      visibility: hidden;
+     
+  }
+  .main{
+      width: 100%;
+  }
+  .logo{
+      width: 4.5rem;
+      height: 4rem;
+      margin: 0px 15px;
+      padding-bottom: 0px;
+    
+    }
+    
+    .title-name{
+      font-family: 'Lilita One', cursive;
+          /* font-weight:bold; */
+        font-size: 1.8rem;
+    }
+
+  #typewriter {
+      font-size: 1.5rem;
+      text-align: center;
+  }
+
+  .headstate1,
+  .headstate3 {
+      font-size: 1rem;
+      text-align: center;
+  }
+  .burger{
+      visibility: visible;
+      top:20px;
+      cursor: pointer;
+  }
+  .hamburger {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 110px;
+  }
+
+}
+
+@media only screen and (max-width:550px){
+  .headstate1,
+  .headstate3{
+      font-size: 1rem;
+      display: grid;
+  }
+  .headstate2{
+      font-size: 20px;
+  }
+  #typewriter{
+      font-size: 1.25rem;
+  }
+  .title-bar{
+      width: 80%;
+      justify-content: space-evenly;
+  }
+  .footer ul{
+      margin: 1rem;
+  }
+  .footer{
+      margin-top: 0rem;
+  }
+ .footer ul a{
+  font-size: 0.8rem;
+ }
+}
